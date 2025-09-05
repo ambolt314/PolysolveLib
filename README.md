@@ -1,0 +1,2 @@
+# PolysolveLib
+Solve polynomial equations
