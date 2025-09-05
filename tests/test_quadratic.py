@@ -17,14 +17,26 @@ def test_roots():
     assert all(cmath.isclose(quad(*params, root), 0.0) for root in roots)
 
 
-@pytest.mark.parametrize(
-    "params, expected",
-    [
-        ([1.0, 0.0, 0.0], [0.0, 0.0]),
-        ([1.0, 14.0, 49.0], [-7.0, -7.0]),
-        ([3.0, 2.0, -1.0], [1 / 3, -1.0]),
-    ],
-)
+# @pytest.mark.parametrize(
+#     "params, expected",
+#     [
+#         ([1.0, 0.0, 0.0], [0.0, 0.0]),
+#         ([1.0, 14.0, 49.0], [-7.0, -7.0]),
+#         ([3.0, 2.0, -1.0], [1 / 3, -1.0]),
+#     ],
+# )
+
+@pytest.mark.parametrize("params", "expected", [
+    'a', ['0', 0, 0.0, 1, 1.0, 2, 2.0, 3, 3.0, 3.5]
+])
+@pytest.mark.parametrize("params", "expected", [
+    'b', []
+])
+@pytest.mark.parametrize("params", "expected", [
+    'c', []
+])
+
+
 def test_quadratic(params, expected):
     """Test quadratic meets expectations."""
     assert all(map(cmath.isclose, quadratic(*params), expected))
