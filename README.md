@@ -9,7 +9,7 @@ pip install git+https://github.com/ambolt314/polysolve.git
 ```
 
 ## Usage
-`polysolve` is able to solve quadratic and cubic equations for any real numbers `a`, `b`, `c`, `d`
+`polysolve` is able to solve quadratic and cubic equations for any complex numbers `a`, `b`, `c`, `d`
 
 ### Quadratic
 ```
