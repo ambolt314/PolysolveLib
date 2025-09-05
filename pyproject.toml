@@ -16,8 +16,8 @@ classifiers = []
 dynamic = ["version"]
 
 [project.urls]
-Homepage="https://github.com/XXX/polysolve"
-Repository="https://github.com/XXX/polysolve.git"
+Homepage="https://github.com/ambolt314/PolysolveLib"
+Repository="https://github.com/ambolt314/PolysolveLib.git"
 
 [tool.setuptools.dynamic]
 version = {attr = "polysolve.__version__"}
